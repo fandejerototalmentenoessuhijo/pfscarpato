@@ -1,0 +1,64 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #000;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    header p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        background-color: #f1f1f1;
+        color: #333;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    footer .text-primary, footer .text-info, footer .text-danger {
+        margin: 0 10px;
+    }
+
+    footer p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 2rem 0;
+    }
+
+    h2 {
+        color: #6a0dad; /* Violeta oscuro */
+    }
+
+    .navbar .navbar-brand {
+        color: #fff !important;
+        background-color: #6a0dad; /* Violeta oscuro */
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: #6a0dad;
+    }
+
+    .navbar .navbar-nav .nav-item.active .nav-link {
+        color: #4b0082; /* Tono más oscuro de violeta */
+    }
+
+    img {
+        margin-top: 1rem;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
