@@ -1,64 +1,160 @@
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header {
-        background-color: #000;
-        color: white;
-        padding: 2rem;
-        text-align: center;
-    }
+/*
+display me va a permitir a mi cambiar el estado natural de las etiquetas
+en css tenemos otra clasificacion para las etiquetas html
+etiquetas in line o en bloque
+en linea:ocupan el espacio del contenido
+etiqueta en bloque:100 porciento del ancho de la pantalla(la mayoria)
+**/
+/*
+.maquetacion-clasica{
+    display: inline;
+    background-color: lightblue;
+}
 
-    header p {
-        margin-top: 1rem;
-        font-size: 1.2rem;
-    }
+.maquetacion-clasica a{
+    display: block;
 
-    footer {
-        background-color: #f1f1f1;
-        color: #333;
-        padding: 1rem;
-        text-align: center;
-    }
+    flex pone todo en horizontal o en column
+    solo trabaja con los hijos directos**/
 
-    footer .text-primary, footer .text-info, footer .text-danger {
-        margin: 0 10px;
-    }
+body {
+  background-color: rgb(0, 0, 0);
+}
 
-    footer p {
-        margin-top: 10px;
-        font-size: 1rem;
-    }
+header {
+  gap: 45;
+}
 
-    main {
-        padding: 2rem 0;
-    }
+.loguito {
+  width: 630px;
+  margin: 0 auto;
+}
 
-    h2 {
-        color: #6a0dad; /* Violeta oscuro */
-    }
+.loguito h1 {
+  float: right;
+  font-size: 100px;
+  color: white;
+}
 
-    .navbar .navbar-brand {
-        color: #fff !important;
-        background-color: #6a0dad; /* Violeta oscuro */
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
+.loguito img {
+  width: 200px;
+  margin: 0 auto;
+}
 
-    .navbar .navbar-nav .nav-item .nav-link {
-        color: #6a0dad;
-    }
+nav {
+  text-align: center;
+}
+.navBar {
+  list-style: none;
+  gap: 20px;
+  margin: 0px;
+  padding-right: 40px;
+}
 
-    .navbar .navbar-nav .nav-item.active .nav-link {
-        color: #4b0082; /* Tono más oscuro de violeta */
-    }
+.navBar li {
+  padding-right: 30px;
+  display: flex;
+  border-right: 1px solid rgb(206, 17, 223);
+  margin-right: 40px;
+}
 
-    img {
-        margin-top: 1rem;
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
+.navBar li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+.galeria {
+  width: 1415px;
+  margin: auto;
+  text-align: center;
+}
+
+.galeria div {
+  width: 400px;
+  display: inline-block;
+  padding: 20px;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.galeria div img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria div h6 {
+  color: white;
+  font-size: 30px;
+}
+footer {
+  background-color: gray;
+  padding-top: 32px;
+  text-align: center;
+}
+footer div {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+footer div h5 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+footer section {
+  padding-bottom: 30px;
+}
+
+.redes {
+  margin-right: 200px;
+}
+
+.redes img {
+  width: 50px;
+  height: 50px;
+}
+
+.artists ul {
+  list-style: none;
+  padding: 0;
+}
+
+.artists ul li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.autor {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0;
+}
+
+.chirimbol0 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chirimbol0 img {
+  background-color: rgb(161, 0, 167);
+  width: 100px;
+  border-radius: 100%;
+  padding: 5px;
+}
