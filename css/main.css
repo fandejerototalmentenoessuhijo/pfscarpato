@@ -7,8 +7,7 @@
   border-radius: 10px;
 }
 
-.chirimbol0 img, .galeriaAlbumes div img, .galeria div img,
-.galeriaArtista div img {
+.chirimbol0 img, .galeriaAlbumes div img, .galeria div img {
   border-radius: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -76,6 +75,10 @@ nav {
   display: flex;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .buttonArtist {
   position: absolute;
   bottom: 9rem;
@@ -87,8 +90,7 @@ nav {
   justify-content: center;
 }
 
-.galeria,
-.galeriaArtista {
+.galeria {
   width: 1415px;
   margin: auto;
   text-align: center;
@@ -96,19 +98,53 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 }
-.galeria div,
-.galeriaArtista div {
+.galeria img:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1, 1);
+}
+.galeria div {
   width: 400px;
   padding: 20px;
   overflow: hidden;
   margin: 30px;
 }
-.galeria div h6,
-.galeriaArtista div h6 {
+.galeria div h6 {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 }
 
+.galeriaArtista {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galeriaArtista img:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1, 1);
+}
+.galeriaArtista div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+  margin: 30px;
+  gap: 1rem;
+}
+.galeriaArtista div img {
+  max-width: 400px;
+  width: 100%;
+}
+.galeriaArtista div h6 {
+  color: white;
+  font-size: 20px;
+}
+.galeriaArtista div:nth-of-type(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
 .galeriaArtista img {
   border-radius: 10px !important;
 }
@@ -357,10 +393,22 @@ footer section {
     gap: 1rem;
     margin: 1rem 0;
   }
+  .galeriaArtista {
+    flex-direction: column;
+  }
+  .galeriaArtista div {
+    flex-direction: column;
+    max-width: 370px;
+  }
   .txtInfo {
     font-size: 2rem;
   }
   .bannerInfo img {
     width: 50px;
   }
+}
+a {
+  cursor: pointer;
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
 }/*# sourceMappingURL=main.css.map */
